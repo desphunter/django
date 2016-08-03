@@ -17,3 +17,12 @@ Bugfixes
 
 * Removed the broken ``BaseCommand.usage()`` method which was for
   ``optparse`` support (:ticket:`27000`).
+
+* Fixed a checks framework crash with an empty ``Meta.default_permissions``
+  (:ticket:`26997`).
+
+* Fixed a regression in the number of queries when using ``RadioSelect`` with a
+  ``ModelChoiceField`` form field (:ticket:`27001`).
+
+* Fixed a crash if ``request.META['CONTENT_LENGTH']`` is an empty string
+  (:ticket:`27005`).
